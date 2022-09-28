@@ -21,8 +21,8 @@ const forecast = (latitude ,longitude, callback) => {
       // const location_country = body.location.country;
 
       callback(undefined,
-        `${weather_descriptions}. The temperature is: ${temperature} ℃.
-         Humidity: ${humidity}%. It feels like: ${feelslike} ℃`
+        `${weather_descriptions}. It is currently ${temperature} degress out.
+        It feels like ${feelslike} degress out. the humidity is ${humidity} %`
       )
     }
   })
