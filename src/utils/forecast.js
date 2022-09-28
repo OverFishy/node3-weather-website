@@ -15,11 +15,15 @@ const forecast = (latitude ,longitude, callback) => {
       const weather_descriptions = currentEccess.weather_descriptions[0];
       const temperature = currentEccess.temperature;
       const feelslike = currentEccess.feelslike;
+      const humidity = currentEccess.humidity;
+      const wind_speed = currentEccess.wind_speed;
       // const location_name = body.location.name;
       // const location_country = body.location.country;
 
       callback(undefined,
-        `${weather_descriptions}. The temperature is: ${temperature} ℃, but feels like: ${feelslike} ℃`
+        `${weather_descriptions}. The temperature is: ${temperature} ℃.
+         Humidity: ${humidity}%. It feels like: ${feelslike} ℃`,
+        // console.log(currentEccess)
         // weather_descriptions,
         // temperature,
         // feelslike,
