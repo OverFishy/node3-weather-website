@@ -6,7 +6,7 @@ const messageTwo = document.querySelector('#message-2')
 
 // Weather fetcher
 const locationSearch = (location) => {
-  const weatherURL = `http://localhost:3000/weather?address=${location}`;
+  const weatherURL = `/weather?address=${location}`;
 
   fetch(weatherURL).then((response) => {
     response.json().then((data) => {
